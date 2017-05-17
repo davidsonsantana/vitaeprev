@@ -9,18 +9,9 @@
 body {
   padding-top: 100px;
   background: #fafafa url(../images/bg.png);
-  font-family: 'Montserrat', sans-serif;
 }
 
 
-/*
- * Global add-ons
- */
-
-.sub-header {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-}
 
 /*
  * Top navigation
@@ -46,8 +37,12 @@ body {
 
 .navbar-nav > li > a{
 	color: #fff;
+  font-family: 'Montserrat', sans-serif;
 }
 
+.navbar-nav > li > a:hover{
+  background: #092249;
+}
 
 
 
@@ -88,6 +83,7 @@ body {
   padding-left: 20px;
   color: #34495e;
   font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 .nav-sidebar > .active > a,
 .nav-sidebar > .active > a:hover,
@@ -105,17 +101,29 @@ body {
  */
 
 .main {
+  min-height: 100vh;
   padding: 20px;
 }
 
+.main .title{
+  margin: 15px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+
 .main h2{
+  margin: 0;
+  float: left;
 	color: #2c3e50;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main h3{
 	margin: 0 0 10px;
 	font-size: 26px;
 	color: #2c3e50;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -125,28 +133,23 @@ body {
   }
 }
 
-.main .page-header {
-  margin-top: 0;
+
+
+.boxes .panel{
+  text-align: center;
 }
 
-.main .boxes .item{
-	height: 150px;
-	padding: 10px;
-	background: #fff;
-	border-radius: 6px;
-	border: 1px solid #eee;
+.boxes .panel-body{
+  line-height: 60px;
 }
 
-.main .boxes .item h3{
-	font-size: 22px;
+.boxes span{
+  color: #34495e;
+  font-size: 28px;
 }
 
 
 
-
-table{
-	background: #fff;
-}
 
 table thead{
 	background: #95a5a6;
@@ -161,11 +164,54 @@ table thead{
 
 footer{
 	padding: 15px 0;
+  margin-top: 100px;
 	background: #ccc;
 	color: #fff;
 	font-size: 11px;
+  position: relative;
+  z-index: 99999;
 }
 
+
+
+.modal h3, .modal h4{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.modal-body{
+  padding-bottom: 50px;
+}
+
+.modal-body ul{
+  padding: 0 0 0 20px;
+  list-style-type: circle;
+}
+
+.modal-body .btn{
+  margin-top: 15px;
+}
+
+.modal-body .btn.remove{
+  margin: 0;
+  color: #e74c3c;
+}
+
+
+
+
+/* Filtros */
+
+.filtro{
+  margin-bottom: 15px;
+  overflow: hidden;
+  display: block;
+}
+
+
+/* Forms */
+
+.form-inline .form-group{
+}
 
 
 

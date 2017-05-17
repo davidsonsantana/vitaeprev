@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Início - Painel VitaePrev</title>
+    <title>Clientes - Painel VitaePrev</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -49,102 +49,126 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Painel</a></li>
-            <li><a href="clientes.html"><i class="fa fa-line-chart" aria-hidden="true"></i> Clientes</a></li>
+            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Painel</a></li>
+            <li class="active"><a href="clientes.html"><i class="fa fa-line-chart" aria-hidden="true"></i> Clientes</a></li>
             <li><a href="vendedores.html"><i class="fa fa-users" aria-hidden="true"></i> Vendedores</a></li>
             <li><a href="pagamentos.html"><i class="fa fa-money" aria-hidden="true"></i> Pagamentos</a></li>
             <li><a href="campanhas.html"><i class="fa fa-bullhorn" aria-hidden="true"></i> Campanhas</a></li>
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          
-        <div class="title">
-          <h2>Painel incial</h2>
-        </div>
-          <div class="row boxes">
-            <div class="col-md-4">
-              <div class="panel panel-default">
-                <div class="panel-heading">Total de vendas / Maio 2017</div>
-                <div class="panel-body">
-                  <span>R$35.000,00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="panel panel-default">
-                <div class="panel-heading">Comissões a pagar / Maio 2017</div>
-                <div class="panel-body">
-                  <span>R$12.000,00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="panel panel-default">
-                <div class="panel-heading">Lucro / Maio 2017</div>
-                <div class="panel-body">
-                  <span>R$23.000,00</span>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <div class="title">
-            <h2>Últimos Clientes Cadastrados</h2>
+            <h2>Lista de Clientes</h2>
           </div>
+
+          <div class="filtro">
+            <form class="navbar-form navbar-left form-inline">
+                <div class="form-group">
+                  <p class="form-control-static">Filtrar por:</p>
+                </div>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>- Alfabeto -</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>E</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <p class="form-control-static">Ou</p>
+                </div>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>- Vendedor -</option>
+                    <option>Fulano</option>
+                    <option>Ciclano</option>
+                    <option>Beltrano</option>
+                    <option>Joaozinho</option>
+                    <option>Maria</option>
+                    <option>...</option>
+                  </select>
+                </div>
+              </form>
+              <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Buscar cliente">
+                </div>
+                <button type="submit" class="btn btn-default">OK</button>
+              </form>
+          </div>
+
           <div class="table-responsive">
             <div class="panel panel-default">
               <table class="table table-bordered table-hover table-striped">
                 <thead>
                   <tr>
-                    <th class="text-center">Data</th>
                     <th>Nome do cliente</th>
-                    <th>Produto</th>
+                    <th>Produtos</th>
                     <th>Vendedor</th>
                     <th class="text-center">Valor</th>
+                    <th class="text-center">&nbsp;</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="text-center">03/04/2017</td>
                     <td>Jack do piston</td>
                     <td>Seguro Auto</td>
                     <td>Lorem Ipsum dolor</td>
                     <td class="text-center">R$1.280,00</td>
+                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></td>
                   </tr>
                   <tr>
-                    <td class="text-center">03/04/2017</td>
                     <td>Jack do piston</td>
                     <td>Seguro Auto</td>
                     <td>Lorem Ipsum dolor</td>
                     <td class="text-center">R$1.280,00</td>
+                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></td>
                   </tr>
                   <tr>
-                    <td class="text-center">03/04/2017</td>
                     <td>Jack do piston</td>
                     <td>Seguro Auto</td>
                     <td>Lorem Ipsum dolor</td>
                     <td class="text-center">R$1.280,00</td>
+                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></td>
                   </tr>
                   <tr>
-                    <td class="text-center">03/04/2017</td>
                     <td>Jack do piston</td>
                     <td>Seguro Auto</td>
                     <td>Lorem Ipsum dolor</td>
                     <td class="text-center">R$1.280,00</td>
+                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></td>
                   </tr>
                   <tr>
-                    <td class="text-center">03/04/2017</td>
                     <td>Jack do piston</td>
                     <td>Seguro Auto</td>
                     <td>Lorem Ipsum dolor</td>
                     <td class="text-center">R$1.280,00</td>
+                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></td>
                   </tr>
                   <tr>
-                    <td class="text-center">03/04/2017</td>
                     <td>Jack do piston</td>
                     <td>Seguro Auto</td>
                     <td>Lorem Ipsum dolor</td>
                     <td class="text-center">R$1.280,00</td>
+                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></td>
+                  </tr>
+                  <tr>
+                    <td>Jack do piston</td>
+                    <td>Seguro Auto</td>
+                    <td>Lorem Ipsum dolor</td>
+                    <td class="text-center">R$1.280,00</td>
+                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></td>
+                  </tr>
+                  <tr>
+                    <td>Jack do piston</td>
+                    <td>Seguro Auto</td>
+                    <td>Lorem Ipsum dolor</td>
+                    <td class="text-center">R$1.280,00</td>
+                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></td>
                   </tr>
                 </tbody>
               </table>
@@ -155,7 +179,7 @@
             <h2>Clientes em atraso</h2>
           </div>
           <div class="table-responsive">
-            <div class="panel panel-danger">
+            <div class="panel panel-default">
               <table class="table table-bordered table-hover">
                 <thead>
                   <tr>
@@ -214,50 +238,6 @@
             </div>
           </div>
 
-          <div class="title">
-            <h2>Vendedores ativos</h2>
-          </div>
-          <div class="table-responsive">
-            <div class="panel panel-default">
-              <table class="table table-bordered table-hover table-striped">
-                <thead>
-                  <tr>
-                    <th>Nome do vendedor</th>
-                    <th>Valor vendido em Maio/17</th>
-                    <th>Comissão a receber em Maio/17</th>
-                    <th>&nbsp;</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Jack do piston</td>
-                    <td>R$9.000,00</td>
-                    <td>R$2.500,00</td>
-                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></td>
-                  </tr>
-                  <tr>
-                    <td>Jack do piston</td>
-                    <td>R$9.000,00</td>
-                    <td>R$2.500,00</td>
-                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></td>
-                  </tr>
-                  <tr>
-                    <td>Jack do piston</td>
-                    <td>R$9.000,00</td>
-                    <td>R$2.500,00</td>
-                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></td>
-                  </tr>
-                  <tr>
-                    <td>Jack do piston</td>
-                    <td>R$9.000,00</td>
-                    <td>R$2.500,00</td>
-                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
@@ -275,7 +255,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h3 class="modal-title" id="myModalLabel">Informações do Vendedor</h3>
+            <h3 class="modal-title" id="myModalLabel">Informações do Cliente</h3>
           </div>
           <div class="modal-body">
             <div class="row">
@@ -283,19 +263,26 @@
                 <img class="img-responsive thumbnail" src="http://www.placehold.it/300x200" />
               </div>
               <div class="col-md-8">
-                <h4>Nome do vendedor</h4>
-                <p>Telefone: (81) 9 9999.8888</p>
-                <p>Email: email@email.com.br</p>
-                <p>Endereço: Rua Lorem ipsum dolor sit amet, 123 - Bairro - Cidade/UF</p>
-                <span>
-                  <p><strong>Especialista em:</strong></p>
-                  <ul>
-                    <li>Seguro Auto</li>
-                    <li>Seguro Residência</li>
-                    <li>Planos de saúde</li>
-                    <li>Previdência</li>
-                  </ul>
-                </span>
+                <h4>Nome do Cliente</h4>
+                <p><strong>Telefone:</strong> (81) 9 9999.8888</p>
+                <p><strong>Email:</strong> email@email.com.br</p>
+                <p>
+                  <strong>Endereço:</strong>
+                  <br>
+                  Rua Lorem ipsum dolor sit amet, 123 - Bairro - Cidade/UF
+                </p>
+                <p><strong>Cliente desde:</strong> 88/88/8888</p>
+                <p><strong>Produtos comprados:</strong></p>
+                <ul>
+                  <li>Seguro Auto</li>
+                  <li>Seguro Residência</li>
+                  <li>Previdência</li>
+                </ul>
+                <a href="#" class="btn btn-default"><i class="fa fa-paperclip" aria-hidden="true"></i> Contrato Auto</a>
+                <a href="#" class="btn btn-default"><i class="fa fa-paperclip" aria-hidden="true"></i> Contrato Residência</a>
+                <a href="#" class="btn btn-default"><i class="fa fa-paperclip" aria-hidden="true"></i> Contrato Previdência</a>
+                <hr>
+                <a class="btn remove" href="#"><i class="fa fa-times" aria-hidden="true"></i> Excluir Cliente</a>
               </div>
             </div>
           </div>
