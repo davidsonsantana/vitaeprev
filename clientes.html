@@ -37,7 +37,7 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Novo Cliente</a></li>
-            <li><a href="#"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Novo Vendedor</a></li>
+            <li><a href="#"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Novo Consultor</a></li>
             <li><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> Meus Dados</a></li>
             <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Sair</a></li>
           </ul>
@@ -50,8 +50,8 @@
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Painel</a></li>
-            <li class="active"><a href="clientes.html"><i class="fa fa-line-chart" aria-hidden="true"></i> Clientes</a></li>
-            <li><a href="vendedores.html"><i class="fa fa-users" aria-hidden="true"></i> Vendedores</a></li>
+            <li><a href="vendas.html"><i class="fa fa-line-chart" aria-hidden="true"></i> Vendas</a></li>
+            <li class="active"><a href="consultores.html"><i class="fa fa-users" aria-hidden="true"></i> Consultores</a></li>
             <li><a href="pagamentos.html"><i class="fa fa-money" aria-hidden="true"></i> Pagamentos</a></li>
             <li><a href="campanhas.html"><i class="fa fa-bullhorn" aria-hidden="true"></i> Campanhas</a></li>
           </ul>
@@ -59,7 +59,7 @@
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
           <div class="title">
-            <h2>Lista de Clientes</h2>
+            <h2><i class="fa fa-users" aria-hidden="true"></i> Lista de Clientes</h2>
           </div>
 
           <div class="filtro">
@@ -83,19 +83,19 @@
                 </div>
                 <div class="form-group">
                   <select class="form-control">
-                    <option>- Vendedor -</option>
-                    <option>Fulano</option>
-                    <option>Ciclano</option>
-                    <option>Beltrano</option>
-                    <option>Joaozinho</option>
-                    <option>Maria</option>
+                    <option>- Produto -</option>
+                    <option>Seguro Auto</option>
+                    <option>Seguro Residencial</option>
+                    <option>Plano de Saúde</option>
+                    <option>Previdência</option>
+                    <option>etc</option>
                     <option>...</option>
                   </select>
                 </div>
               </form>
               <form class="navbar-form navbar-right" role="search">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Buscar cliente">
+                  <input type="text" class="form-control" placeholder="Buscar Cliente">
                 </div>
                 <button type="submit" class="btn btn-default">OK</button>
               </form>
@@ -106,132 +106,20 @@
               <table class="table table-bordered table-hover table-striped">
                 <thead>
                   <tr>
+                    <th class="text-center">Matrícula</th>
+                    <th>Cliente desde</th>
                     <th>Nome do cliente</th>
-                    <th>Produtos</th>
-                    <th>Vendedor</th>
-                    <th class="text-center">Valor</th>
-                    <th class="text-center">&nbsp;</th>
+                    <th>Consultor</th>
+                    <th>&nbsp;</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Jack do piston</td>
-                    <td>Seguro Auto</td>
+                    <td class="text-center">#0003456</td>
+                    <td>03/08/27</td>
+                    <td>Fulano da Silva</td>
                     <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">R$1.280,00</td>
-                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></td>
-                  </tr>
-                  <tr>
-                    <td>Jack do piston</td>
-                    <td>Seguro Auto</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">R$1.280,00</td>
-                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></td>
-                  </tr>
-                  <tr>
-                    <td>Jack do piston</td>
-                    <td>Seguro Auto</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">R$1.280,00</td>
-                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></td>
-                  </tr>
-                  <tr>
-                    <td>Jack do piston</td>
-                    <td>Seguro Auto</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">R$1.280,00</td>
-                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></td>
-                  </tr>
-                  <tr>
-                    <td>Jack do piston</td>
-                    <td>Seguro Auto</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">R$1.280,00</td>
-                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></td>
-                  </tr>
-                  <tr>
-                    <td>Jack do piston</td>
-                    <td>Seguro Auto</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">R$1.280,00</td>
-                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></td>
-                  </tr>
-                  <tr>
-                    <td>Jack do piston</td>
-                    <td>Seguro Auto</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">R$1.280,00</td>
-                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></td>
-                  </tr>
-                  <tr>
-                    <td>Jack do piston</td>
-                    <td>Seguro Auto</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">R$1.280,00</td>
-                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <div class="title">
-            <h2>Clientes em atraso</h2>
-          </div>
-          <div class="table-responsive">
-            <div class="panel panel-default">
-              <table class="table table-bordered table-hover">
-                <thead>
-                  <tr>
-                    <th class="text-center">Atrasado desde</th>
-                    <th>Nome do cliente</th>
-                    <th>Produto</th>
-                    <th>Vendedor</th>
-                    <th class="text-center">Valor</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="danger">
-                    <td class="text-center">03/04/2017</td>
-                    <td>Jack do piston</td>
-                    <td>Seguro Auto</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">R$1.280,00</td>
-                  </tr>
-                  <tr class="danger">
-                    <td class="text-center">03/04/2017</td>
-                    <td>Jack do piston</td>
-                    <td>Seguro Auto</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">R$1.280,00</td>
-                  </tr>
-                  <tr class="danger">
-                    <td class="text-center">03/04/2017</td>
-                    <td>Jack do piston</td>
-                    <td>Seguro Auto</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">R$1.280,00</td>
-                  </tr>
-                  <tr class="danger">
-                    <td class="text-center">03/04/2017</td>
-                    <td>Jack do piston</td>
-                    <td>Seguro Auto</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">R$1.280,00</td>
-                  </tr>
-                  <tr class="danger">
-                    <td class="text-center">03/04/2017</td>
-                    <td>Jack do piston</td>
-                    <td>Seguro Auto</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">R$1.280,00</td>
-                  </tr>
-                  <tr class="danger">
-                    <td class="text-center">03/04/2017</td>
-                    <td>Jack do piston</td>
-                    <td>Seguro Auto</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">R$1.280,00</td>
+                    <td>botao</td>
                   </tr>
                 </tbody>
               </table>
@@ -255,7 +143,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h3 class="modal-title" id="myModalLabel">Informações do Cliente</h3>
+            <h3 class="modal-title" id="myModalLabel">Informações do Consultor</h3>
           </div>
           <div class="modal-body">
             <div class="row">
@@ -263,26 +151,19 @@
                 <img class="img-responsive thumbnail" src="http://www.placehold.it/300x200" />
               </div>
               <div class="col-md-8">
-                <h4>Nome do Cliente</h4>
-                <p><strong>Telefone:</strong> (81) 9 9999.8888</p>
-                <p><strong>Email:</strong> email@email.com.br</p>
-                <p>
-                  <strong>Endereço:</strong>
-                  <br>
-                  Rua Lorem ipsum dolor sit amet, 123 - Bairro - Cidade/UF
-                </p>
-                <p><strong>Cliente desde:</strong> 88/88/8888</p>
-                <p><strong>Produtos comprados:</strong></p>
-                <ul>
-                  <li>Seguro Auto</li>
-                  <li>Seguro Residência</li>
-                  <li>Previdência</li>
-                </ul>
-                <a href="#" class="btn btn-default"><i class="fa fa-paperclip" aria-hidden="true"></i> Contrato Auto</a>
-                <a href="#" class="btn btn-default"><i class="fa fa-paperclip" aria-hidden="true"></i> Contrato Residência</a>
-                <a href="#" class="btn btn-default"><i class="fa fa-paperclip" aria-hidden="true"></i> Contrato Previdência</a>
-                <hr>
-                <a class="btn remove" href="#"><i class="fa fa-times" aria-hidden="true"></i> Excluir Cliente</a>
+                <h4>Nome do Consultor</h4>
+                <p>Telefone: (81) 9 9999.8888</p>
+                <p>Email: email@email.com.br</p>
+                <p>Endereço: Rua Lorem ipsum dolor sit amet, 123 - Bairro - Cidade/UF</p>
+                <span>
+                  <p><strong>Especialista em:</strong></p>
+                  <ul>
+                    <li>Seguro Auto</li>
+                    <li>Seguro Residência</li>
+                    <li>Planos de saúde</li>
+                    <li>Previdência</li>
+                  </ul>
+                </span>
               </div>
             </div>
           </div>

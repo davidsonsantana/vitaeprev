@@ -216,6 +216,17 @@ footer{
 
 
 
+.main .featurette{
+  margin-top: 45px;
+}
+
+
+.main .featurette h3{
+  margin-top: 10px;
+}
+
+
+
 /* Login */
 .form-signin {
   max-width: 330px;
