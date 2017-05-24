@@ -220,10 +220,16 @@ footer{
   margin-top: 45px;
 }
 
-
 .main .featurette h3{
   margin-top: 10px;
 }
+
+.main .featurette .img-responsive{
+  width: 100%;
+}
+
+
+
 
 
 
