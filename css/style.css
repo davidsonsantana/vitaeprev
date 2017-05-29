@@ -40,7 +40,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.navbar-nav > li > a:hover{
+.navbar-nav > li.active > a, .navbar-nav > li > a:hover{
   background: #092249;
 }
 
@@ -124,6 +124,14 @@ body {
 	font-size: 26px;
 	color: #2c3e50;
   font-family: 'Montserrat', sans-serif;
+}
+
+.main .matricula{
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  background: #7f8c8d;
+  color: #fff; 
 }
 
 @media (min-width: 768px) {
@@ -286,8 +294,9 @@ footer{
 
 
 
-
-
+.main form h3{
+  margin-top: 30px;
+}
 
 
 
