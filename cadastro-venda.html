@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Novo Cliente - Painel VitaePrev</title>
+    <title>Nova Venda - Painel VitaePrev</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -64,194 +64,192 @@
             <h2><i class="fa fa-user" aria-hidden="true"></i> Cadastrar Nova Venda</h2>
           </div>
 
-          <form>
-            
-            <h3>Dados Pessoais</h3>
-            <div class="row">
-              <div class="col-md-8">
-                <div class="form-group">
-                  <label for="nome">Nome Completo</label>
-                  <input type="text" class="form-control" id="nome" placeholder="Nome do consultor">
-                </div>
-              </div>
-
-              <div class="clearfix">&nbsp;</div>
-
-              <div class="col-md-8">
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Email">
-                </div>
-              </div>
-
-              <div class="clearfix">&nbsp;</div>
-
-              <div class="col-md-3 col-sm-4">
-                <div class="form-group">
-                  <label for="fone">Telefone</label>
-                  <input type="text" class="form-control" id="fone" placeholder="Telefone">
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-4">
-                <div class="form-group">
-                  <label for="data">Data de Nascimento</label>
-                  <input type="date" class="form-control" id="data" placeholder="Data de Nascimento">
-                </div>
-              </div>
-              <div class="col-md-2 col-sm-4">
-                <div class="form-group">
-                  <label for="idade">Idade</label>
-                  <input type="text" class="form-control" id="idade" placeholder="Idade">
-                </div>
-              </div>
-
-              <div class="clearfix">&nbsp;</div>
-
-              <div class="col-md-2">
-                <div class="form-group">
-                  <label for="nome">Estado Civil</label>
-                  <select class="form-control">
-                    <option>Solteiro</option>
-                    <option>Casado</option>
-                    <option>Divorciado</option>
-                    <option>Viúvo</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <label>Sexo</label>
-                <div class="form-group">
-                  <label class="radio-inline">
-                    <input type="radio" name="sexo" id="inlineRadio1" value="option1"> Masculino
-                  </label>
-                  <label class="radio-inline">
-                    <input type="radio" name="sexo" id="inlineRadio2" value="option2"> Feminino
-                  </label>
-                </div>
-              </div>
-
-              <div class="clearfix">&nbsp;</div>
-
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label for="documento">CPF/CNPJ</label>
-                  <input type="text" class="form-control" id="documento" placeholder="CPF ou CNPJ">
-                </div>
-              </div>
-
-              <div class="col-md-12">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox"> Marque se for titular do CPF.
-                  </label>
-                </div>
-              </div>
-
-              <div class="clearfix">&nbsp;</div>
-
-              <div class="col-md-3">
-                <div class="form-group">
-                  <label for="orgao">Órgão expedidor</label>
-                  <input type="text" class="form-control" id="orgao" placeholder="Órgão expedidor">
-                </div>
-              </div>
-
-              <div class="col-md-3">
-                <div class="form-group">
-                  <label for="natureza">Natureza do documento</label>
-                  <input type="text" class="form-control" id="natureza" placeholder="Natureza do documento">
-                </div>
-              </div>
-
-              <div class="col-md-3">
-                <div class="form-group">
-                  <label for="expedicao">Data de expedição</label>
-                  <input type="date" class="form-control" id="expedicao" placeholder="Data de expedição">
-                </div>
-              </div>
-
-              <div class="clearfix">&nbsp;</div>
-
-
-
-            </div>
-
-            
-
-            
-            <h3>Dados Bancários</h3>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label for="documento">CPF/CNPJ</label>
-                  <input type="text" class="form-control" id="documento" placeholder="CPF ou CNPJ">
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="form-group">
-                  <label for="banco">Banco</label>
-                  <input type="text" class="form-control" id="banco" placeholder="Banco">
-                </div>
-              </div>
-
-              <div class="clearfix">&nbsp;</div>
-
-              <div class="col-md-2 col-sm-6">
-                <div class="form-group">
-                  <label for="agencia">Agência</label>
-                  <input type="text" class="form-control" id="agencia" placeholder="Agência">
-                </div>
-              </div>
-              <div class="col-md-2 col-sm-6">
-                <div class="form-group">
-                  <label for="conta">Conta CC/CP</label>
-                  <input type="text" class="form-control" id="conta" placeholder="Conta CC/CP">
-                </div>
+          <div class="row vendas">
+            <div class="col-md-6">
+              <div class="jumbotron">
+                <h3>Venda » Novo Cliente</h3>
+                <p>Caso esta venda seja para um novo cliente. Primeiro faça o cadastro do novo cliente clicando no botão abaixo.</p>
+                <a class="btn btn-success btn-lg" href="cadastro-cliente.html">» Cadastrar Novo Cliente</a>
               </div>
             </div>
-
-
-            <h3>Definir Login</h3>
-
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="usuario">Nome de usuário</label>
-                  <input type="text" class="form-control" id="usuario" placeholder="Nome de usuário">
-                </div>
-              </div>
-
-              <div class="clearfix">&nbsp;</div>
-
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label for="senha">Senha</label>
-                  <input type="password" class="form-control" id="senha" placeholder="Senha">
-                </div>
-              </div>
-
-              <div class="clearfix">&nbsp;</div>
-
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label for="resenha">Redigite a senha</label>
-                  <input type="password" class="form-control" id="resenha" placeholder="Redigite a senha">
-                </div>
-              </div>
-
-              <div class="clearfix">&nbsp;</div>
-
-              <div class="col-md-12">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox"> Enviar dados por email para o novo corretor.
-                  </label>
-                </div>
+            <div class="col-md-6">
+              <div class="jumbotron">
+                <h3>Venda » Cadastrar venda</h3>
+                <p>Caso o cliente já exista ou já tenha sido cadastrado, clique no botão abaixo para prosseguir com o cadastro da venda.</p>
+                <button class="btn btn-warning btn-lg" href="#">» Cadastrar Nova Venda</button>
               </div>
             </div>
-            <button type="submit" class="btn btn-lg btn-success">Salvar</button>
-          </form>
+          </div>
+
+
+          <div class="produtos">
+            <div class="title">
+              <h2>Identificar Cliente</h2>
+            </div>
+
+            <form class="form-inline">
+              <div class="form-group">
+                <label for="identificar">Insira o CPF ou Matrícula do cliente » </label>
+                <input type="text" class="form-control" id="identificar" placeholder="CPF ou Matrícula">
+              </div>
+              <button type="submit" class="btn btn-success"><i class="fa fa-search" aria-hidden="true"></i> Identificar</button>
+            </form>
+
+            <div class="wrap-venda">
+              <h3>Dados Pessoais</h3>
+              <form>
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="form-group disabled">
+                      <label for="nome">Nome Completo</label>
+                      <input type="text" class="form-control" id="nome" value="Nome completo" disabled>
+                    </div>
+                  </div>
+
+                  <div class="clearfix">&nbsp;</div>
+
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" value="Email" disabled>
+                    </div>
+                  </div>
+
+                  <div class="clearfix">&nbsp;</div>
+
+                  <div class="col-md-3 col-sm-4">
+                    <div class="form-group">
+                      <label for="data">Data de Nascimento</label>
+                      <input type="date" class="form-control" id="data" value="2013-01-08" disabled>
+                    </div>
+                  </div>
+                  <div class="col-md-2 col-sm-4">
+                    <div class="form-group">
+                      <label for="idade">Idade</label>
+                      <input type="text" class="form-control" id="idade" value="Idade" disabled>
+                    </div>
+                  </div>
+
+                  <div class="clearfix">&nbsp;</div>
+
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="nome">Estado Civil</label>
+                      <select class="form-control" disabled>
+                        <option>Solteiro</option>
+                        <option>Casado</option>
+                        <option>Divorciado</option>
+                        <option>Viúvo</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <label>Sexo</label>
+                    <div class="form-group">
+                      <label class="radio-inline">
+                        <input type="radio" name="sexo" id="inlineRadio1" value="option1" disabled checked="checked"> Masculino
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="sexo" id="inlineRadio2" value="option2" disabled> Feminino
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="clearfix">&nbsp;</div>
+
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="documento">CPF/CNPJ</label>
+                      <input type="text" class="form-control" id="documento" value="000.000.000-00" disabled>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+
+              <div class="title">
+                <h2>Produtos Vendidos</h2>
+              </div>
+
+              <form>
+                <div class="item">
+                
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <label for="consultor">Consultor que atendeu</label>
+                        <select id="consultor" class="form-control">
+                          <option>Consultor 001</option>
+                          <option>Consultor 002</option>
+                          <option>Consultor 003</option>
+                          <option>Consultor 004</option>
+                          <option>Consultor 005</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="produto">Produto Vendido</label>
+                        <select id="consultor" class="form-control">
+                          <option>Previdencia</option>
+                          <option>Seguro Auto</option>
+                          <option>Plano de Saúde</option>
+                          <option>Seguro Residência</option>
+                          <option>Seguro Naval</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="clearfix">&nbsp;</div>
+
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="valor">Valor da venda</label>
+                        <div class="input-group">
+                          <div class="input-group-addon">R$</div>
+                          <input type="text" class="form-control" id="valor" placeholder="Valor">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                      <div class="form-group">
+                        <label for="parcelas">Parcelas</label>
+                        <input type="text" class="form-control" id="parcelas" placeholder="Parcelas">
+                      </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                      <div class="form-group">
+                        <label for="descricao">Descrição Geral</label>
+                        <textarea id="descricao" class="form-control" rows="8"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                      <div class="form-group">
+                        <label>Demais campos</label>
+                        <p>.....</p>
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- ITEM -->
+
+                <span class="clone"><i class="fa fa-plus-square" aria-hidden="true"></i> Adicionar nova venda</span>
+
+                <div class="clearfix">&nbsp;</div>
+
+                <button type="submit" class="btn btn-success btn-lg">Cadastrar Venda</button>
+              </form>
+
+            </div>
+            
+
+            
+
+          </div>
 
 
         </div>

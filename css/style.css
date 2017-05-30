@@ -128,6 +128,7 @@ body {
 
 .main .matricula{
   padding: 10px 15px;
+  margin-left: 25px;
   border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
   background: #7f8c8d;
@@ -155,6 +156,26 @@ body {
   color: #34495e;
   font-size: 28px;
 }
+
+
+
+.vendas .panel{
+  text-align: center;
+}
+
+.vendas .panel-heading{
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: #444;
+}
+
+
+.vendas .panel-body p{
+  margin-bottom: 15px;
+}
+
+
 
 
 
@@ -297,6 +318,56 @@ footer{
 .main form h3{
   margin-top: 30px;
 }
+
+.main form .btn{
+  margin-top: 30px;
+}
+
+
+
+
+.main .jumbotron{
+  min-height: 290px;
+}
+
+
+.main .produtos{
+  display: none;
+}
+
+.main .produtos .btn{
+  margin-top: 0;
+}
+
+
+
+.produtos .wrap-venda{
+  margin-top: 30px;
+}
+
+
+
+.wrap-venda .item{
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
