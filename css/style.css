@@ -271,7 +271,6 @@ footer{
 
 .form-signin h2{
 	margin: 0 0 15px;
-	background: #ccc;
 }
 
 .form-signin .form-signin-heading,
@@ -319,9 +318,6 @@ footer{
   margin-top: 30px;
 }
 
-.main form .btn{
-  margin-top: 30px;
-}
 
 
 
@@ -335,9 +331,7 @@ footer{
   display: none;
 }
 
-.main .produtos .btn{
-  margin-top: 0;
-}
+
 
 
 
