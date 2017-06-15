@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Clientes - Painel VitaePrev</title>
+    <title>Novo Consultor - Painel VitaePrev</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -51,7 +51,7 @@
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Painel</a></li>
-            <li class="active"><a href="clientes.html"><i class="fa fa-line-chart" aria-hidden="true"></i> Vendas</a></li>
+            <li><a href="vendas.html"><i class="fa fa-line-chart" aria-hidden="true"></i> Vendas</a></li>
             <li><a href="consultores.html"><i class="fa fa-users" aria-hidden="true"></i> Consultores</a></li>
             <li><a href="pagamentos.html"><i class="fa fa-money" aria-hidden="true"></i> Pagamentos</a></li>
             <li><a href="clientes.html"><i class="fa fa-user" aria-hidden="true"></i> Clientes</a></li>
@@ -61,71 +61,136 @@
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
           <div class="title">
-            <h2><i class="fa fa-line-chart" aria-hidden="true"></i> Detalhes da Venda</h2>
+            <h2><i class="fa fa-users" aria-hidden="true"></i> Editando Consultor</h2>
           </div>
 
-          <div class="row">
-            <div class="col-md-8">
-              <h3>Seguro Auto</h3>
-
-              <h4>Inforamações do cliente</h4>
-              <p>Nome: Fulano da Silva</p>
-              <p>Telefone: (81) 9 9999.8888</p>
-              <p>Email: email@email.com.br</p>
-              <p>Endereço: Rua Lorem ipsum dolor sit amet, 123 - Bairro - Cidade/UF</p>
-              <hr>
-
-              <h4>Inforamações da venda</h4>
-              <p>Consultor Responsável: Cicrano dos Santos</p>
-              <p>Valor: R$3.500,00</p>
-              <p>Vencimento: Dia 15/mês</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <hr>
-
-              <h4>Status de pagamento</h4>
-               <form class="navbar-form navbar-left form-inline">
+          <form>
+            
+            <h3>Dados Pessoais</h3>
+            <div class="row">
+              <div class="col-md-8">
                 <div class="form-group">
-                  <p class="form-control-static">Situação</p>
+                  <label for="nome">Nome Completo</label>
+                  <input type="text" class="form-control" id="nome" value="Fulaninho Silva">
                 </div>
+              </div>
+
+              <div class="clearfix">&nbsp;</div>
+
+              <div class="col-md-8">
                 <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" value="teste@testando.com">
+                </div>
+              </div>
+
+              <div class="clearfix">&nbsp;</div>
+
+              <div class="col-md-4 col-sm-6">
+                <div class="form-group">
+                  <label for="fone">Telefone</label>
+                  <input type="text" class="form-control" id="fone" value="(81) 9 9999.8888">
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="form-group">
+                  <label for="data">Data de Nascimento</label>
+                  <input type="date" class="form-control" id="data" value="1986-11-26">
+                </div>
+              </div>
+
+              <div class="clearfix">&nbsp;</div>
+
+              <div class="col-md-2">
+                <div class="form-group">
+                  <label for="nome">Função</label>
                   <select class="form-control">
-                    <option>- Escolha uma opção -</option>
-                    <option value="1">Em dia ✓</option>
-                    <option value="2">Atrasado ✕</option>
+                    <option>Corretor</option>
+                    <option>Administrativo</option>
+                    <option>Estagiário</option>
+                    <option>Prestador de serviço</option>
                   </select>
                 </div>
-                
-                <div class="atrasado">
-                  <div class="form-group">
-                    <p class="form-control-static">Atrasado desde</p>
-                  </div>
-                  <div class="form-group">
-                    <select class="form-control">
-                      <option>- Escolha uma opção -</option>
-                      <option value="1">Em dia ✓</option>
-                      <option value="2">Atrasado ✕</option>
-                    </select>
-                  </div>
-                </div>
-                
-              </form>
+              </div>
 
             </div>
-            <div class="col-md-4">
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <img class="center-block thumbnail" src="http://www.placehold.it/180x250">
-                  <h4>Inforamações do consultor que atendeu</h4>
-                  <p>Nome: Fulano da Silva</p>
-                  <p>Telefone: (81) 9 9999.8888</p>
-                  <p>Email: email@email.com.br</p>
-                  <p>Endereço: Rua Lorem ipsum dolor sit amet, 123 - Bairro - Cidade/UF</p>
+
+            
+
+            
+            <h3>Dados Bancários</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="documento">CPF/CNPJ</label>
+                  <input type="text" class="form-control" id="documento" value="000.000.000-00">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="banco">Banco</label>
+                  <input type="text" class="form-control" id="banco" value="Itau">
+                </div>
+              </div>
+
+              <div class="clearfix">&nbsp;</div>
+
+              <div class="col-md-2 col-sm-6">
+                <div class="form-group">
+                  <label for="agencia">Agência</label>
+                  <input type="text" class="form-control" id="agencia" value="0000">
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-6">
+                <div class="form-group">
+                  <label for="conta">Conta CC/CP</label>
+                  <input type="text" class="form-control" id="conta" value="00000-0">
                 </div>
               </div>
             </div>
-          </div>
 
-          
+
+            <h3>Definir Login</h3>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="usuario">Nome de usuário</label>
+                  <input type="text" class="form-control" id="usuario" value="fulaninho15">
+                </div>
+              </div>
+
+              <div class="clearfix">&nbsp;</div>
+
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="senha">Senha</label>
+                  <input type="password" class="form-control" id="senha" placeholder="Senha">
+                </div>
+              </div>
+
+              <div class="clearfix">&nbsp;</div>
+
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="resenha">Redigite a senha</label>
+                  <input type="password" class="form-control" id="resenha" placeholder="Redigite a senha">
+                </div>
+              </div>
+
+              <div class="clearfix">&nbsp;</div>
+
+              <div class="col-md-12">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Enviar dados por email para o novo corretor.
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-lg btn-success"><i class="fa fa-check" aria-hidden="true"></i> Salvar Informações</button>
+          </form>
+
 
         </div>
       </div>
@@ -139,24 +204,21 @@
 
 
     <!-- Modal Venda -->
-    <div class="modal fade" id="venda" tabindex="-1" role="dialog" aria-labelledby="venda">
+    <div class="modal fade" id="info-cliente" tabindex="-1" role="dialog" aria-labelledby="venda">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h3 class="modal-title" id="myModalLabel">Informações da Venda</h3>
+            <h3 class="modal-title" id="myModalLabel">Informações do Cliente</h3>
           </div>
           <div class="modal-body">
-            <h4>Seguro Auto</h4>
             <p><strong>Dados do cliente</strong></p>
             <p>Nome: Fulano da Silva</p>
             <p>Telefone: (81) 9 9999.8888</p>
             <p>Email: email@email.com.br</p>
             <p>Endereço: Rua Lorem ipsum dolor sit amet, 123 - Bairro - Cidade/UF</p>
             <hr>
-            <p><strong>Dados da venda</strong></p>
-            <p>Consultor Responsável: Cicrano dos Santos</p>
-            <p>Valor: R$3.500,00</p>
+            <p><strong>Demais Informações</strong></p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>

@@ -148,13 +148,24 @@ body {
   text-align: center;
 }
 
+.boxes .panel-heading{
+  font-weight: 700;
+  font-size: 13px;
+}
+
 .boxes .panel-body{
-  line-height: 60px;
+  height: 100px;
 }
 
 .boxes span{
   color: #34495e;
   font-size: 28px;
+}
+
+.boxes small{
+  color: #888;
+  font-size: 14px;
+  display: block;
 }
 
 
