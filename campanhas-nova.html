@@ -62,54 +62,44 @@
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
           <div class="title">
-            <h2><i class="fa fa-bullhorn" aria-hidden="true"></i> Campanhas Internas</h2>
-            <a href="campanhas-nova.html" class="pull-right btn btn-primary"><i class="fa fa-plus-circle" aria-hidden="true"></i> Criar Nova Campanha</a>
+            <h2><i class="fa fa-bullhorn" aria-hidden="true"></i> Criar nova campanha</h2>
           </div>
-
-          <div class="row featurette">
-            <div class="col-md-5 col-lg-4">
-              <img class="img-responsive thumbnail" src="http://www.placehold.it/400x300">
-            </div>
-            <div class="col-md-7 col-lg-8">
-              <h3>Chamada da campanha lorem ipsum</h3>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#campanha">
-                Saiba Mais
-              </button>
-            </div>
-          </div>
-          <hr class="featurette-divider">
-
-
-          <div class="row featurette">
-            <div class="col-md-5 col-lg-4">
-              <img class="img-responsive thumbnail" src="http://www.placehold.it/400x300">
-            </div>
-            <div class="col-md-7 col-lg-8">
-              <h3>Chamada da campanha lorem ipsum</h3>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#campanha">
-                Saiba Mais
-              </button>
-            </div>
-          </div>
-          <hr class="featurette-divider">
-
-
-          <div class="row featurette">
-            <div class="col-md-5 col-lg-4">
-              <img class="img-responsive thumbnail" src="http://www.placehold.it/400x300">
-            </div>
-            <div class="col-md-7 col-lg-8">
-              <h3>Chamada da campanha lorem ipsum</h3>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#campanha">
-                Saiba Mais
-              </button>
-            </div>
-          </div>
-          <hr class="featurette-divider">
           
+          <form>
+            <div class="form-group">
+              <label for="capanha-nome">Nome da Campanha</label>
+              <input type="text" class="form-control" id="capanha-nome" placeholder="Insira o nome da campanha">
+            </div>
+
+            <div class="form-group">
+              <label for="capanha-chamada">Sub-chamada da Campanha</label>
+              <input type="text" class="form-control" id="capanha-chamada" placeholder="Insira a sub-chamada da campanha">
+            </div>
+            
+            <div class="form-group">
+              <label for="exampleInputFile">Imagem da campanha</label>
+              <input type="file" id="exampleInputFile">
+              <p class="help-block">Insira a imagem de divulgação da nova campanha.</p>
+            </div>
+
+            <div class="form-group">
+              <label for="capanha-descricao">Descrição da Campanha</label>
+              <textarea id="capanha-descricao" class="form-control" rows="8" placeholder="Insira a descrição da campanha"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="destino">Campanha direcionada para:</label>
+              <select id="destino" class="form-control">
+                <option>Todos os consultores</option>
+                <option>Apenas gerentes</option>
+              </select>
+            </div>
+
+            
+            
+            <button type="submit" class="btn btn-success btn-lg">Cadastrar nova campanha</button>
+          </form>
+
 
         </div>
       </div>

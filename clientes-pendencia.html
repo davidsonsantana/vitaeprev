@@ -51,32 +51,32 @@
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Painel</a></li>
-            
             <li><a href="#" id="btn-1" data-toggle="collapse" data-target="#vendas" aria-expanded="false"><i class="fa fa-line-chart" aria-hidden="true"></i> Vendas <i class="fa fa-caret-down pull-right" aria-hidden="true"></i></a>
               <ul class="nav collapse" id="vendas" role="menu" aria-labelledby="btn-1">
                 <li><a href="vendas.html">» Resumo Geral</a></li>
                 <li><a href="vendas-pagas.html">» Contratos pagos</a></li>
-                <li><a href="vendas-abertas.html">» Contratos em aberto</a></li>
+                <li><a href="vendas-pendentes.html">» Contratos pendentes</a></li>
               </ul>
             </li>
-
             <li><a href="consultores.html"><i class="fa fa-users" aria-hidden="true"></i> Consultores</a></li>
             <li><a href="pagamentos.html"><i class="fa fa-money" aria-hidden="true"></i> Pagamentos</a></li>
             
             <li class="active"><a href="#" id="btn-1" data-toggle="collapse" data-target="#clientes" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> Clientes <i class="fa fa-caret-down pull-right" aria-hidden="true"></i></a>
               <ul class="nav collapse in" id="clientes" role="menu" aria-labelledby="btn-1">
-                <li class="active"><a href="clientes.html">» Listagem clientes</a></li>
-                <li><a href="clientes-pendencia.html">» Clientes com pendência</a></li>
+                <li><a href="clientes.html">» Listagem clientes</a></li>
+                <li class="active"><a href="clientes-pendencia.html">» Clientes com pendência</a></li>
               </ul>
             </li>
 
             <li><a href="campanhas.html"><i class="fa fa-bullhorn" aria-hidden="true"></i> Campanhas</a></li>
           </ul>
         </div>
+
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
           <div class="title">
-            <h2><i class="fa fa-users" aria-hidden="true"></i> Lista de Clientes</h2>
+            <h2><i class="fa fa-users" aria-hidden="true"></i> Clientes com Pendência</h2>
           </div>
 
           <div class="filtro">
@@ -134,96 +134,41 @@
 
           <div class="table-responsive">
             <div class="panel panel-default">
-              <table class="table table-bordered table-hover table-striped">
+              <table class="table table-bordered table-hover">
                 <thead>
                   <tr>
-                    <th class="text-center">Matrícula</th>
-                    <th>Cliente desde</th>
+                    <th class="text-center">Atrasado desde</th>
+                    <th>Produto</th>
+                    <th>Gerente / Consultor</th>
                     <th>Nome do cliente</th>
-                    <th>Consultor</th>
-                    <th>&nbsp;</th>
+                    <th class="text-center">Valor</th>
+                    <th class="text-center">Parcelas</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td class="text-center">#0003456</td>
-                    <td>03/08/27</td>
+                  <tr class="danger">
+                    <td class="text-center">03/04/2017</td>
+                    <td>Seguro Auto</td>
+                    <td>Alisson Cursino <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
                     <td>Fulano da Silva</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">
-                      <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#info-cliente">Informações</button>
-                      <a href="cliente-detalhes.html" class="btn btn-danger btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</a>
-                    </td>
+                    <td class="text-center">R$1.280,00</td>
+                    <td class="text-center">2 Parcelas</td>
                   </tr>
-                  <tr>
-                    <td class="text-center">#0003456</td>
-                    <td>03/08/27</td>
-                    <td>Fulano da Silva</td>
+                  <tr class="danger">
+                    <td class="text-center">03/04/2017</td>
+                    <td>Seguro Auto</td>
                     <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">
-                      <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#info-cliente">Informações</button>
-                      <a href="cliente-detalhes.html" class="btn btn-danger btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</a>
-                    </td>
+                    <td>Fulano da Silva</td>
+                    <td class="text-center">R$1.280,00</td>
+                    <td class="text-center">3 Parcelas</td>
                   </tr>
-                  <tr>
-                    <td class="text-center">#0003456</td>
-                    <td>03/08/27</td>
-                    <td>Fulano da Silva</td>
+                  <tr class="danger">
+                    <td class="text-center">03/04/2017</td>
+                    <td>Seguro Auto</td>
                     <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">
-                      <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#info-cliente">Informações</button>
-                      <a href="cliente-detalhes.html" class="btn btn-danger btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text-center">#0003456</td>
-                    <td>03/08/27</td>
                     <td>Fulano da Silva</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">
-                      <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#info-cliente">Informações</button>
-                      <a href="cliente-detalhes.html" class="btn btn-danger btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text-center">#0003456</td>
-                    <td>03/08/27</td>
-                    <td>Fulano da Silva</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">
-                      <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#info-cliente">Informações</button>
-                      <a href="cliente-detalhes.html" class="btn btn-danger btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text-center">#0003456</td>
-                    <td>03/08/27</td>
-                    <td>Fulano da Silva</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">
-                      <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#info-cliente">Informações</button>
-                      <a href="cliente-detalhes.html" class="btn btn-danger btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text-center">#0003456</td>
-                    <td>03/08/27</td>
-                    <td>Fulano da Silva</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">
-                      <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#info-cliente">Informações</button>
-                      <a href="cliente-detalhes.html" class="btn btn-danger btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text-center">#0003456</td>
-                    <td>03/08/27</td>
-                    <td>Fulano da Silva</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td class="text-center">
-                      <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#info-cliente">Informações</button>
-                      <a href="cliente-detalhes.html" class="btn btn-danger btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</a>
-                    </td>
+                    <td class="text-center">R$1.280,00</td>
+                    <td class="text-center">1 Parcelas</td>
                   </tr>
                 </tbody>
               </table>
@@ -252,6 +197,7 @@
             </nav>
           </div>
 
+
         </div>
       </div>
     </div>
@@ -264,21 +210,24 @@
 
 
     <!-- Modal Venda -->
-    <div class="modal fade" id="info-cliente" tabindex="-1" role="dialog" aria-labelledby="venda">
+    <div class="modal fade" id="venda" tabindex="-1" role="dialog" aria-labelledby="venda">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h3 class="modal-title" id="myModalLabel">Informações do Cliente</h3>
+            <h3 class="modal-title" id="myModalLabel">Informações da Venda</h3>
           </div>
           <div class="modal-body">
+            <h4>Seguro Auto</h4>
             <p><strong>Dados do cliente</strong></p>
             <p>Nome: Fulano da Silva</p>
             <p>Telefone: (81) 9 9999.8888</p>
             <p>Email: email@email.com.br</p>
             <p>Endereço: Rua Lorem ipsum dolor sit amet, 123 - Bairro - Cidade/UF</p>
             <hr>
-            <p><strong>Demais Informações</strong></p>
+            <p><strong>Dados da venda</strong></p>
+            <p>Consultor Responsável: Cicrano dos Santos</p>
+            <p>Valor: R$3.500,00</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>

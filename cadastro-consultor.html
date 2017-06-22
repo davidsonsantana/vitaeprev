@@ -104,11 +104,31 @@
               <div class="col-md-2">
                 <div class="form-group">
                   <label for="nome">Função</label>
+                  <select class="form-control funcao">
+                    <option value="adm">Administrador</option>
+                    <option value="gerente">Gerente</option>
+                    <option value="consultor">Consultor</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-md-4 show-gerente">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" class="check-gerente"> Marque se o consultor tiver gerente.
+                  </label>
+                </div>
+              </div>
+
+              <div class="clearfix">&nbsp;</div>
+
+              <div class="col-md-6 gerente">
+                <div class="form-group">
+                  <label for="nome">Nome do gerente</label>
                   <select class="form-control">
-                    <option>Corretor</option>
-                    <option>Administrativo</option>
-                    <option>Estagiário</option>
-                    <option>Prestador de serviço</option>
+                    <option>Fulano Silva</option>
+                    <option>Ciclano Silva</option>
+                    <option>Beltrano Silva</option>
                   </select>
                 </div>
               </div>
