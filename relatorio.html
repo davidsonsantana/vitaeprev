@@ -39,7 +39,7 @@
             <li><a href="cadastro-cliente.html"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Novo Cliente</a></li>
             <li><a href="cadastro-venda.html"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Nova Venda</a></li>
             <li><a href="cadastro-consultor.html"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Novo Consultor</a></li>
-            <li><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> Meus Dados</a></li>
+            <li><a href="meus-dados.html"><i class="fa fa-user-circle" aria-hidden="true"></i> Meus Dados</a></li>
             <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Sair</a></li>
           </ul>
         </div>
@@ -50,16 +50,16 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Painel</a></li>
+            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Painel</a></li>
             <li><a href="#" id="btn-1" data-toggle="collapse" data-target="#vendas" aria-expanded="false"><i class="fa fa-line-chart" aria-hidden="true"></i> Vendas <i class="fa fa-caret-down pull-right" aria-hidden="true"></i></a>
               <ul class="nav collapse" id="vendas" role="menu" aria-labelledby="btn-1">
-                <li><a href="vendas.html">» Resumo Geral</a></li>
-                <li><a href="vendas-pagas.html">» Contratos pagos</a></li>
-                <li><a href="vendas-abertas.html">» Contratos em aberto</a></li>
+                <li><a href="vendas.html">» Resumo de Vendas</a></li>
+                <li><a href="vendas-abertas.html">» Vendas em aberto</a></li>
+<li><a href="vendas-pagas.html">» Vendas faturadas</a></li>
               </ul>
             </li>
             <li><a href="consultores.html"><i class="fa fa-users" aria-hidden="true"></i> Consultores</a></li>
-            <li><a href="pagamentos.html"><i class="fa fa-money" aria-hidden="true"></i> Pagamentos</a></li>
+            <li><a href="pagamentos.html"><i class="fa fa-money" aria-hidden="true"></i> Comissões</a></li>
 
             <li><a href="#" id="btn-1" data-toggle="collapse" data-target="#clientes" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> Clientes <i class="fa fa-caret-down pull-right" aria-hidden="true"></i></a>
               <ul class="nav collapse" id="clientes" role="menu" aria-labelledby="btn-1">
@@ -100,7 +100,7 @@
 
           <div class="sub-title">
             <h3>Exibindo informações do período:</h3>
-            <span>01/06/2017 até 22/06/17</span>
+            <span>01/06/2017 até Hoje</span>
             <a class="pull-right print" href="#"><i class="fa fa-print" aria-hidden="true"></i> Imprimir</a>
           </div>
           
@@ -109,69 +109,78 @@
             <table class="table table-hover table-striped table-condensed">
               <thead>
                 <tr>
-                  <th class="text-center">Data</th>
+                  <th>Data</th>
                   <th>Produto</th>
                   <th>Gerente / Consultor</th>
                   <th>Nome do cliente</th>
                   <th>Valor</th>
+                  <th>Status</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Alisson Cursino <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="verde">Faturada</td>
                 </tr>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Fulano Silva <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="verde">Faturada</td>
                 </tr>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Davidson Santana</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="vermelho">Em aberto</td>
                 </tr>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Ciclano Deca <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="verde">Faturada</td>
                 </tr>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Bruna Bini</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="verde">Faturada</td>
                 </tr>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Tomás Aino Rêgo <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="verde">Faturada</td>
                 </tr>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Dereckson</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="vermelho">Em aberto</td>
                 </tr>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
-                  <td>Jack do Piston <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
+                  <td>John Doe <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="vermelho">Em aberto</td>
                 </tr>
               </tbody>
             </table>
@@ -186,69 +195,78 @@
             <table class="table table-hover table-striped table-condensed">
               <thead>
                 <tr>
-                  <th class="text-center">Data</th>
+                  <th>Data</th>
                   <th>Produto</th>
                   <th>Gerente / Consultor</th>
                   <th>Nome do cliente</th>
                   <th>Valor</th>
+                  <th>Status</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Alisson Cursino <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="verde">Faturada</td>
                 </tr>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Fulano Silva <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="verde">Faturada</td>
                 </tr>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Davidson Santana</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="verde">Faturada</td>
                 </tr>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Ciclano Deca <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="verde">Faturada</td>
                 </tr>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Bruna Bini</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="verde">Faturada</td>
                 </tr>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Tomás Aino Rêgo <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="verde">Faturada</td>
                 </tr>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Dereckson</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="verde">Faturada</td>
                 </tr>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
-                  <td>Jack do Piston <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
+                  <td>John Doe <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="verde">Faturada</td>
                 </tr>
               </tbody>
             </table>
@@ -263,32 +281,35 @@
             <table class="table table-hover table-striped table-condensed">
               <thead>
                 <tr>
-                  <th class="text-center">Data</th>
+                  <th>Data</th>
                   <th>Produto</th>
                   <th>Gerente / Consultor</th>
                   <th>Nome do cliente</th>
                   <th>Valor</th>
+                  <th>Status</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Alisson Cursino <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="vermelho">Em aberto</td>
                 </tr>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Fulano Silva <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="vermelho">Em aberto</td>
                 </tr>
               </tbody>
             </table>
             <div class="total pull-right">
-              <span>Total:</span> R$8.200,00
+              <span>Total:</span> R$5.925,00
             </div>
           </div>
 
@@ -359,6 +380,76 @@
             </table>
             <div class="total pull-right">
               <span>Total:</span> R$15.600,00
+            </div>
+          </div>
+
+
+          <h4>Comissões não pagas</h4>
+          <div class="table-responsive relatorio">
+            <table class="table table-hover table-striped table-condensed">
+              <thead>
+                <tr>
+                  <th class="text-center">#</th>
+                  <th>Gerente ou Consultor</th>
+                  <th>Valor vendido</th>
+                  <th>Valor a receber</th>
+                  <th>Forma de pagamento</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center">01</td>
+                  <td>Nome do consultor ou gerente</td>
+                  <td>R$12.000,00</td>
+                  <td>R$5.750,00</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                </tr>
+                <tr>
+                  <td class="text-center">01</td>
+                  <td>Nome do consultor ou gerente</td>
+                  <td>R$12.000,00</td>
+                  <td>R$5.750,00</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                </tr>
+                <tr>
+                  <td class="text-center">01</td>
+                  <td>Nome do consultor ou gerente</td>
+                  <td>R$12.000,00</td>
+                  <td>R$5.750,00</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                </tr>
+                <tr>
+                  <td class="text-center">01</td>
+                  <td>Nome do consultor ou gerente</td>
+                  <td>R$12.000,00</td>
+                  <td>R$5.750,00</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                </tr>
+                <tr>
+                  <td class="text-center">01</td>
+                  <td>Nome do consultor ou gerente</td>
+                  <td>R$12.000,00</td>
+                  <td>R$5.750,00</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                </tr>
+                <tr>
+                  <td class="text-center">01</td>
+                  <td>Nome do consultor ou gerente</td>
+                  <td>R$12.000,00</td>
+                  <td>R$5.750,00</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="total pull-right">
+              <span>Total:</span> R$3.200,00
             </div>
           </div>
 

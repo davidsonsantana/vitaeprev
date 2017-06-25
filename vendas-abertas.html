@@ -39,7 +39,7 @@
             <li><a href="cadastro-cliente.html"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Novo Cliente</a></li>
             <li><a href="cadastro-venda.html"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Nova Venda</a></li>
             <li><a href="cadastro-consultor.html"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Novo Consultor</a></li>
-            <li><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> Meus Dados</a></li>
+            <li><a href="meus-dados.html"><i class="fa fa-user-circle" aria-hidden="true"></i> Meus Dados</a></li>
             <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Sair</a></li>
           </ul>
         </div>
@@ -53,13 +53,13 @@
             <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Painel</a></li>
             <li class="active"><a href="#" id="btn-1" data-toggle="collapse" data-target="#vendas" aria-expanded="false"><i class="fa fa-line-chart" aria-hidden="true"></i> Vendas <i class="fa fa-caret-down pull-right" aria-hidden="true"></i></a>
               <ul class="nav collapse in" id="vendas" role="menu" aria-labelledby="btn-1">
-                <li><a href="vendas.html">» Resumo Geral</a></li>
-                <li><a href="vendas-pagas.html">» Contratos pagos</a></li>
-                <li class="active"><a href="vendas-abertas.html">» Contratos em aberto</a></li>
+                <li><a href="vendas.html">» Resumo de Vendas</a></li>
+                <li class="active"><a href="vendas-abertas.html">» Vendas em aberto</a></li>
+                <li><a href="vendas-pagas.html">» Vendas faturadas</a></li>
               </ul>
             </li>
             <li><a href="consultores.html"><i class="fa fa-users" aria-hidden="true"></i> Consultores</a></li>
-            <li><a href="pagamentos.html"><i class="fa fa-money" aria-hidden="true"></i> Pagamentos</a></li>
+            <li><a href="pagamentos.html"><i class="fa fa-money" aria-hidden="true"></i> Comissões</a></li>
             <li><a href="clientes.html"><i class="fa fa-user" aria-hidden="true"></i> Clientes</a></li>
             <li><a href="campanhas.html"><i class="fa fa-bullhorn" aria-hidden="true"></i> Campanhas</a></li>
           </ul>
@@ -69,7 +69,7 @@
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
           <div class="title">
-            <h2><i class="fa fa-line-chart" aria-hidden="true"></i> Contratos em Aberto</h2>
+            <h2><i class="fa fa-line-chart" aria-hidden="true"></i> Vendas em aberto</h2>
           </div>
 
           <div class="filtro">
@@ -129,76 +129,90 @@
             <table class="table table-hover table-striped">
               <thead>
                 <tr>
-                  <th class="text-center">Data</th>
+                  <th class="text-center">#</th>
+                  <th>Data</th>
                   <th>Produto</th>
                   <th>Gerente / Consultor</th>
                   <th>Nome do cliente</th>
                   <th>Valor</th>
+                  <th>Status</th>
                   <th>&nbsp;</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td class="text-center">01</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Alisson Cursino <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="vermelho">Em aberto</td>
                   <td class="text-center">
                     <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#venda">Detalhes da Venda</button>
                     <a href="venda-detalhes-aberto.html" class="btn btn-danger btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</a>
                   </td>
                 </tr>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td class="text-center">02</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Alisson Cursino <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="vermelho">Em aberto</td>
                   <td class="text-center">
                     <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#venda">Detalhes da Venda</button>
                     <a href="venda-detalhes-aberto.html" class="btn btn-danger btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</a>
                   </td>
                 </tr>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td class="text-center">03</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Alisson Cursino <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="vermelho">Em aberto</td>
                   <td class="text-center">
                     <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#venda">Detalhes da Venda</button>
                     <a href="venda-detalhes-aberto.html" class="btn btn-danger btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</a>
                   </td>
                 </tr>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td class="text-center">04</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Alisson Cursino <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="vermelho">Em aberto</td>
                   <td class="text-center">
                     <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#venda">Detalhes da Venda</button>
                     <a href="venda-detalhes-aberto.html" class="btn btn-danger btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</a>
                   </td>
                 </tr>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td class="text-center">05</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Alisson Cursino <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="vermelho">Em aberto</td>
                   <td class="text-center">
                     <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#venda">Detalhes da Venda</button>
                     <a href="venda-detalhes-aberto.html" class="btn btn-danger btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</a>
                   </td>
                 </tr>
                 <tr>
-                  <td class="text-center">03/04/2017</td>
+                  <td class="text-center">06</td>
+                  <td>03/04/2017</td>
                   <td>Seguro Auto</td>
                   <td>Alisson Cursino <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
                   <td>Lorem Ipsum dolor</td>
                   <td>R$1.250,00</td>
+                  <td class="vermelho">Em aberto</td>
                   <td class="text-center">
                     <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#venda">Detalhes da Venda</button>
                     <a href="venda-detalhes-aberto.html" class="btn btn-danger btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</a>
@@ -246,6 +260,9 @@
               <strong>Observações gerais:</strong>
               <br>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <a class="btn btn-default btn-info" href="contrato.doc" target="_blank"><i class="fa fa-paperclip" aria-hidden="true"></i> Ver contrato anexado</a>
+
           </div>
         </div>
       </div>

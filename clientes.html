@@ -39,7 +39,7 @@
             <li><a href="cadastro-cliente.html"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Novo Cliente</a></li>
             <li><a href="cadastro-venda.html"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Nova Venda</a></li>
             <li><a href="cadastro-consultor.html"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Novo Consultor</a></li>
-            <li><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> Meus Dados</a></li>
+            <li><a href="meus-dados.html"><i class="fa fa-user-circle" aria-hidden="true"></i> Meus Dados</a></li>
             <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Sair</a></li>
           </ul>
         </div>
@@ -54,14 +54,14 @@
             
             <li><a href="#" id="btn-1" data-toggle="collapse" data-target="#vendas" aria-expanded="false"><i class="fa fa-line-chart" aria-hidden="true"></i> Vendas <i class="fa fa-caret-down pull-right" aria-hidden="true"></i></a>
               <ul class="nav collapse" id="vendas" role="menu" aria-labelledby="btn-1">
-                <li><a href="vendas.html">» Resumo Geral</a></li>
-                <li><a href="vendas-pagas.html">» Contratos pagos</a></li>
-                <li><a href="vendas-abertas.html">» Contratos em aberto</a></li>
+                <li><a href="vendas.html">» Resumo de Vendas</a></li>
+                <li><a href="vendas-abertas.html">» Vendas em aberto</a></li>
+<li><a href="vendas-pagas.html">» Vendas faturadas</a></li>
               </ul>
             </li>
 
             <li><a href="consultores.html"><i class="fa fa-users" aria-hidden="true"></i> Consultores</a></li>
-            <li><a href="pagamentos.html"><i class="fa fa-money" aria-hidden="true"></i> Pagamentos</a></li>
+            <li><a href="pagamentos.html"><i class="fa fa-money" aria-hidden="true"></i> Comissões</a></li>
             
             <li class="active"><a href="#" id="btn-1" data-toggle="collapse" data-target="#clientes" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> Clientes <i class="fa fa-caret-down pull-right" aria-hidden="true"></i></a>
               <ul class="nav collapse in" id="clientes" role="menu" aria-labelledby="btn-1">
@@ -133,8 +133,7 @@
           </div>
 
           <div class="table-responsive">
-            <div class="panel panel-default">
-              <table class="table table-bordered table-hover table-striped">
+            <table class="table table-hover table-striped">
                 <thead>
                   <tr>
                     <th class="text-center">Matrícula</th>
@@ -227,7 +226,6 @@
                   </tr>
                 </tbody>
               </table>
-            </div>
           </div>
 
           <div class="text-center">
@@ -265,7 +263,7 @@
 
     <!-- Modal Venda -->
     <div class="modal fade" id="info-cliente" tabindex="-1" role="dialog" aria-labelledby="venda">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -273,6 +271,7 @@
           </div>
           <div class="modal-body">
             <p><strong>Dados do cliente</strong></p>
+            <p>Matrícula: #873458398-9</p>
             <p>Nome: Fulano da Silva</p>
             <p>Telefone: (81) 9 9999.8888</p>
             <p>Email: email@email.com.br</p>
@@ -280,6 +279,40 @@
             <hr>
             <p><strong>Demais Informações</strong></p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <hr>
+            <p><strong>Proutos adquiquiridos</strong></p>
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th class="text-center">#</th>
+                  <th>Data</th>
+                  <th>Produto</th>
+                  <th>Gerente / Consultor</th>
+                  <th>Valor</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center">01</td>
+                  <td>03/04/2017</td>
+                  <td>Seguro Auto</td>
+                  <td>Alisson Cursino <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
+                  <td>R$1.250,00</td>
+                  <td class="vermelho">Em aberto</td>
+                </tr>
+                <tr>
+                  <td class="text-center">01</td>
+                  <td>03/04/2017</td>
+                  <td>Prvidência</td>
+                  <td>Nome do consultor</td>
+                  <td>R$20.000,00</td>
+                  <td class="verde">Faturado</td>
+                </tr>
+              </tbody>
+            </table>
+
           </div>
         </div>
       </div>

@@ -39,7 +39,7 @@
             <li><a href="cadastro-cliente.html"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Novo Cliente</a></li>
             <li><a href="cadastro-venda.html"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Nova Venda</a></li>
             <li><a href="cadastro-consultor.html"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Novo Consultor</a></li>
-            <li><a href="meus-dados.html"><i class="fa fa-user-circle" aria-hidden="true"></i> Meus Dados</a></li>
+            <li class="active"><a href="meus-dados.html"><i class="fa fa-user-circle" aria-hidden="true"></i> Meus Dados</a></li>
             <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Sair</a></li>
           </ul>
         </div>
@@ -52,7 +52,7 @@
           <ul class="nav nav-sidebar">
             <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Painel</a></li>
             <li><a href="vendas.html"><i class="fa fa-line-chart" aria-hidden="true"></i> Vendas</a></li>
-            <li class="active"><a href="consultores.html"><i class="fa fa-users" aria-hidden="true"></i> Consultores</a></li>
+            <li><a href="consultores.html"><i class="fa fa-users" aria-hidden="true"></i> Consultores</a></li>
             <li><a href="pagamentos.html"><i class="fa fa-money" aria-hidden="true"></i> Comissões</a></li>
             <li><a href="clientes.html"><i class="fa fa-user" aria-hidden="true"></i> Clientes</a></li>
             <li><a href="campanhas.html"><i class="fa fa-bullhorn" aria-hidden="true"></i> Campanhas</a></li>
@@ -61,7 +61,7 @@
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
           <div class="title">
-            <h2><i class="fa fa-users" aria-hidden="true"></i> Editando Consultor</h2>
+            <h2><i class="fa fa-user-circle" aria-hidden="true"></i> Meus Dados</h2>
           </div>
 
           <form>
@@ -96,48 +96,6 @@
                 <div class="form-group">
                   <label for="data">Data de Nascimento</label>
                   <input type="date" class="form-control" id="data" value="1986-11-26">
-                </div>
-              </div>
-
-              <div class="clearfix">&nbsp;</div>
-
-              <div class="col-md-2">
-                <div class="form-group">
-                  <label for="nome">Função</label>
-                  <select class="form-control funcao">
-                    <option value="adm">Administrador</option>
-                    <option value="gerente">Gerente</option>
-                    <option value="consultor">Consultor</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="col-md-4 show-gerente">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" class="check-gerente"> Marque se o consultor tiver gerente.
-                  </label>
-                </div>
-              </div>
-
-              <div class="clearfix">&nbsp;</div>
-
-              <div class="col-md-6 gerente">
-                <div class="form-group">
-                  <label for="nome">Nome do gerente</label>
-                  <select class="form-control">
-                    <option>Fulano Silva</option>
-                    <option>Ciclano Silva</option>
-                    <option>Beltrano Silva</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="col-md-2">
-                <div class="form-group">
-                  <label for="exampleInputFile">Foto do consultor</label>
-                  <input type="file" id="exampleInputFile">
-                  <p class="help-block">Lorem ipsum sit dolor amet consectum.</p>
                 </div>
               </div>
 
