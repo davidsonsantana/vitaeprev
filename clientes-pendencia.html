@@ -69,6 +69,8 @@
             </li>
 
             <li><a href="campanhas.html"><i class="fa fa-bullhorn" aria-hidden="true"></i> Campanhas</a></li>
+            <li><a href="metas.html"><i class="fa fa-bullseye" aria-hidden="true"></i> Metas</a></li>
+          <li><a href="fechamento.html"><i class="fa fa-calendar" aria-hidden="true"></i> Fechamento</a></li>
           </ul>
         </div>
 
@@ -77,26 +79,13 @@
 
           <div class="title">
             <h2><i class="fa fa-users" aria-hidden="true"></i> Clientes com Pendência</h2>
+            <a class="pull-right print" href="#"><i class="fa fa-print" aria-hidden="true"></i> Imprimir</a>
           </div>
 
           <div class="filtro">
             <form class="navbar-form navbar-left form-inline">
                 <div class="form-group">
                   <p class="form-control-static">Filtrar por:</p>
-                </div>
-                <div class="form-group">
-                  <select class="form-control">
-                    <option>- Mês -</option>
-                    <option>Janeiro</option>
-                    <option>Fevereiro</option>
-                    <option>Março</option>
-                    <option>Abril</option>
-                    <option>Maio</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <p class="form-control-static">Ou</p>
                 </div>
                 <div class="form-group">
                   <select class="form-control">
@@ -133,46 +122,66 @@
           </div>
 
           <div class="table-responsive">
-            <div class="panel panel-default">
-              <table class="table table-bordered table-hover">
-                <thead>
-                  <tr>
-                    <th class="text-center">Atrasado desde</th>
-                    <th>Produto</th>
-                    <th>Gerente / Consultor</th>
-                    <th>Nome do cliente</th>
-                    <th class="text-center">Valor</th>
-                    <th class="text-center">Parcelas</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="danger">
-                    <td>03/04/2017</td>
-                    <td>Seguro Auto</td>
-                    <td>Alisson Cursino <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
-                    <td>Fulano da Silva</td>
-                    <td class="text-center">R$1.280,00</td>
-                    <td class="text-center">2 Parcelas</td>
-                  </tr>
-                  <tr class="danger">
-                    <td>03/04/2017</td>
-                    <td>Seguro Auto</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td>Fulano da Silva</td>
-                    <td class="text-center">R$1.280,00</td>
-                    <td class="text-center">3 Parcelas</td>
-                  </tr>
-                  <tr class="danger">
-                    <td>03/04/2017</td>
-                    <td>Seguro Auto</td>
-                    <td>Lorem Ipsum dolor</td>
-                    <td>Fulano da Silva</td>
-                    <td class="text-center">R$1.280,00</td>
-                    <td class="text-center">1 Parcelas</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Atrasado desde</th>
+                  <th>Nome do cliente</th>
+                  <th>Produto</th>
+                  <th>Gerente / Consultor</th>
+                  <th class="text-center">Valor</th>
+                  <th class="text-center">Parcelas</th>
+                  <th class="text-center">&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="danger">
+                  <td>03/04/2017</td>
+                  <td>Fulano da Silva</td>
+                  <td>Seguro Auto</td>
+                  <td>Alisson Cursino <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
+                  <td class="text-center">R$1.280,00</td>
+                  <td class="text-center">2 Parcelas</td>
+                  <td class="text-center"><button type="button" class="btn btn-default btn-sm">Resolver atraso</button></td>
+                </tr>
+                <tr class="danger">
+                  <td>03/04/2017</td>
+                  <td>Fulano da Silva</td>
+                  <td>Seguro Auto</td>
+                  <td>Alisson Cursino <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
+                  <td class="text-center">R$1.280,00</td>
+                  <td class="text-center">2 Parcelas</td>
+                  <td class="text-center"><button type="button" class="btn btn-default btn-sm">Resolver atraso</button></td>
+                </tr>
+                <tr class="danger">
+                  <td>03/04/2017</td>
+                  <td>Fulano da Silva</td>
+                  <td>Seguro Auto</td>
+                  <td>Nome do consultor</td>
+                  <td class="text-center">R$1.280,00</td>
+                  <td class="text-center">2 Parcelas</td>
+                  <td class="text-center"><button type="button" class="btn btn-default btn-sm">Resolver atraso</button></td>
+                </tr>
+                <tr class="danger">
+                  <td>03/04/2017</td>
+                  <td>Fulano da Silva</td>
+                  <td>Seguro Auto</td>
+                  <td>Nome do consultor</td>
+                  <td class="text-center">R$1.280,00</td>
+                  <td class="text-center">2 Parcelas</td>
+                  <td class="text-center"><button type="button" class="btn btn-default btn-sm">Resolver atraso</button></td>
+                </tr>
+                <tr class="danger">
+                  <td>03/04/2017</td>
+                  <td>Fulano da Silva</td>
+                  <td>Seguro Auto</td>
+                  <td>Alisson Cursino <i class="fa fa-angle-double-right" aria-hidden="true"></i> Nome do consultor</td>
+                  <td class="text-center">R$1.280,00</td>
+                  <td class="text-center">2 Parcelas</td>
+                  <td class="text-center"><button type="button" class="btn btn-default btn-sm">Resolver atraso</button></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
           <div class="text-center">

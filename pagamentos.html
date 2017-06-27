@@ -51,17 +51,32 @@
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Painel</a></li>
-            <li><a href="vendas.html"><i class="fa fa-line-chart" aria-hidden="true"></i> Vendas</a></li>
+            <li><a href="#" id="btn-1" data-toggle="collapse" data-target="#vendas" aria-expanded="false"><i class="fa fa-line-chart" aria-hidden="true"></i> Vendas <i class="fa fa-caret-down pull-right" aria-hidden="true"></i></a>
+              <ul class="nav collapse" id="vendas" role="menu" aria-labelledby="btn-1">
+                <li><a href="vendas.html">» Resumo de Vendas</a></li>
+                <li><a href="vendas-abertas.html">» Vendas em aberto</a></li>
+                <li><a href="vendas-pagas.html">» Vendas faturadas</a></li>
+              </ul>
+            </li>
             <li><a href="consultores.html"><i class="fa fa-users" aria-hidden="true"></i> Consultores</a></li>
             <li class="active"><a href="pagamentos.html"><i class="fa fa-money" aria-hidden="true"></i> Comissões</a></li>
-            <li><a href="clientes.html"><i class="fa fa-user" aria-hidden="true"></i> Clientes</a></li>
+
+            <li><a href="#" id="btn-1" data-toggle="collapse" data-target="#clientes" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> Clientes <i class="fa fa-caret-down pull-right" aria-hidden="true"></i></a>
+              <ul class="nav collapse" id="clientes" role="menu" aria-labelledby="btn-1">
+                <li><a href="clientes.html">» Listagem clientes</a></li>
+                <li><a href="clientes-pendencia.html">» Clientes com pendência</a></li>
+              </ul>
+            </li>
+
             <li><a href="campanhas.html"><i class="fa fa-bullhorn" aria-hidden="true"></i> Campanhas</a></li>
+            <li><a href="metas.html"><i class="fa fa-bullseye" aria-hidden="true"></i> Metas</a></li>
+          <li><a href="fechamento.html"><i class="fa fa-calendar" aria-hidden="true"></i> Fechamento</a></li>
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
           <div class="title">
-            <h2><i class="fa fa-money" aria-hidden="true"></i> Comissões a liberar</h2>
+            <h2><i class="fa fa-money" aria-hidden="true"></i> Comissões a sinalizar</h2>
           </div>
 
           <div class="table-responsive">
@@ -70,9 +85,10 @@
                 <tr>
                   <th>Produto</th>
                   <th>Cliente</th>
-                  <th>Consultor</th>
-                  <th>Valor</th>
-                  <th class="text-center">Autorização</th>
+                  <th>Gerente / Consultor</th>
+                  <th>Valor da venda</th>
+                  <th>Comissão</th>
+                  <th class="text-center">Sinalização</th>
                 </tr>
               </thead>
               <tbody>
@@ -80,7 +96,8 @@
                   <td>Previdência</td>
                   <td>John Doe</td>
                   <td>Joaozinho das Vendas</td>
-                  <td>R$25.000,00</td>
+                  <td>R$7.000,00</td>
+                  <td>R$1.300,00</td>
                   <td class="text-center">
                     <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#venda">Mais Detalhes</button>
                   </td>
@@ -89,7 +106,8 @@
                   <td>Previdência</td>
                   <td>John Doe</td>
                   <td>Joaozinho das Vendas</td>
-                  <td>R$25.000,00</td>
+                  <td>R$7.000,00</td>
+                  <td>R$1.300,00</td>
                   <td class="text-center">
                     <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#venda">Mais Detalhes</button>
                   </td>
@@ -98,7 +116,8 @@
                   <td>Previdência</td>
                   <td>John Doe</td>
                   <td>Joaozinho das Vendas</td>
-                  <td>R$25.000,00</td>
+                  <td>R$7.000,00</td>
+                  <td>R$1.300,00</td>
                   <td class="text-center">
                     <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#venda">Mais Detalhes</button>
                   </td>
@@ -107,7 +126,8 @@
                   <td>Previdência</td>
                   <td>John Doe</td>
                   <td>Joaozinho das Vendas</td>
-                  <td>R$25.000,00</td>
+                  <td>R$7.000,00</td>
+                  <td>R$1.300,00</td>
                   <td class="text-center">
                     <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#venda">Mais Detalhes</button>
                   </td>
@@ -118,7 +138,7 @@
 
 
           <div class="title">
-            <h2>Comissões já liberadas</h2>
+            <h2>Comissões aguardando fechamento</h2>
           </div>
           <div class="filtro">
             <form class="navbar-form navbar-left form-inline">
@@ -151,12 +171,6 @@
                   </select>
                 </div>
               </form>
-              <form class="navbar-form navbar-right" role="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Buscar">
-                </div>
-                <button type="submit" class="btn btn-default">OK</button>
-              </form>
           </div>
           <div class="table-responsive">
             <table class="table table-hover table-striped">
@@ -164,90 +178,101 @@
                 <tr>
                   <th>Produto</th>
                   <th>Cliente</th>
-                  <th>Consultor</th>
-                  <th>Valor</th>
-                  <th class="text-center">Autorização</th>
+                  <th>Gerente / Consultor</th>
+                  <th>Valor da venda</th>
+                  <th>Comissão</th>
+                  <th class="text-center">Sinalização</th>
+                  <th class="text-center">Fechamento</th>
+                  <th class="text-center">&nbsp;</th>
                 </tr>
               </thead>
               <tbody>
-                <tr class="success">
+                <tr>
                   <td>Previdência</td>
                   <td>John Doe</td>
                   <td>Joaozinho das Vendas</td>
-                  <td>R$25.000,00</td>
+                  <td>R$7.000,00</td>
+                  <td>R$1.300,00</td>
                   <td class="text-center">
                     <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#venda-2">Mais Detalhes</button>
                   </td>
+                  <td class="text-center">
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#venda-3"><i class="fa fa-calendar" aria-hidden="true"></i> Fazer fechamento</button>
+                  </td>
+                  <td class="verde">OK</td>
                 </tr>
-                <tr class="success">
+                <tr>
                   <td>Previdência</td>
                   <td>John Doe</td>
                   <td>Joaozinho das Vendas</td>
-                  <td>R$25.000,00</td>
+                  <td>R$7.000,00</td>
+                  <td>R$1.300,00</td>
                   <td class="text-center">
                     <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#venda-2">Mais Detalhes</button>
                   </td>
+                  <td class="text-center">
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#venda-3"><i class="fa fa-calendar" aria-hidden="true"></i> Fazer fechamento</button>
+                  </td>
+                  <td class="verde">OK</td>
                 </tr>
-                <tr class="success">
+                <tr>
                   <td>Previdência</td>
                   <td>John Doe</td>
                   <td>Joaozinho das Vendas</td>
-                  <td>R$25.000,00</td>
+                  <td>R$7.000,00</td>
+                  <td>R$1.300,00</td>
                   <td class="text-center">
                     <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#venda-2">Mais Detalhes</button>
                   </td>
+                  <td class="text-center">
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#venda-3"><i class="fa fa-calendar" aria-hidden="true"></i> Fazer fechamento</button>
+                  </td>
+                  <td class="verde">OK</td>
                 </tr>
-                <tr class="success">
+                <tr>
                   <td>Previdência</td>
                   <td>John Doe</td>
                   <td>Joaozinho das Vendas</td>
-                  <td>R$25.000,00</td>
+                  <td>R$7.000,00</td>
+                  <td>R$1.300,00</td>
                   <td class="text-center">
                     <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#venda-2">Mais Detalhes</button>
                   </td>
+                  <td class="text-center">
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#venda-3"><i class="fa fa-calendar" aria-hidden="true"></i> Fazer fechamento</button>
+                  </td>
+                  <td class="verde">OK</td>
                 </tr>
-                <tr class="success">
+                <tr>
                   <td>Previdência</td>
                   <td>John Doe</td>
                   <td>Joaozinho das Vendas</td>
-                  <td>R$25.000,00</td>
+                  <td>R$7.000,00</td>
+                  <td>R$1.300,00</td>
                   <td class="text-center">
                     <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#venda-2">Mais Detalhes</button>
                   </td>
+                  <td class="text-center">
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#venda-3"><i class="fa fa-calendar" aria-hidden="true"></i> Fazer fechamento</button>
+                  </td>
+                  <td class="vermelho">Falta</td>
                 </tr>
-                <tr class="success">
+                <tr>
                   <td>Previdência</td>
                   <td>John Doe</td>
                   <td>Joaozinho das Vendas</td>
-                  <td>R$25.000,00</td>
+                  <td>R$7.000,00</td>
+                  <td>R$1.300,00</td>
                   <td class="text-center">
                     <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#venda-2">Mais Detalhes</button>
                   </td>
+                  <td class="text-center">
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#venda-3"><i class="fa fa-calendar" aria-hidden="true"></i> Fazer fechamento</button>
+                  </td>
+                  <td class="vermelho">Falta</td>
                 </tr>
               </tbody>
             </table>
-          </div>
-
-          <div class="text-center">
-            <nav aria-label="Page navigation">
-              <ul class="pagination">
-                <li>
-                  <a href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                  </a>
-                </li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>
-                  <a href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
           </div>
           
 
@@ -276,7 +301,8 @@
             <p>Valor: R$3.500,00</p>
             <p>Vencimento: Dia 15/mês</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <button type="button" class="btn btn-success"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Autorizar pagamento ao consultor</button>
+            
+            <button type="button" class="btn btn-success"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Sinalizar pagamento ao consultor ou gerente</button>
           </div>
         </div>
       </div>
@@ -297,7 +323,56 @@
             <p>Valor: R$3.500,00</p>
             <p>Vencimento: Dia 15/mês</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <button type="button" class="btn btn-danger"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> Desutorizar pagamento ao consultor</button>
+            <button type="button" class="btn btn-danger"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> Remover sinalização de pagamento ao consultor</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="venda-3" tabindex="-1" role="dialog" aria-labelledby="venda2">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title" id="myModalLabel">Informações da Venda</h3>
+          </div>
+          <div class="modal-body">
+            <h4>Seguro Viagem</h4>
+            <p>Consultor Responsável: Cicrano dos Santos</p>
+            <p>Valor: R$3.500,00</p>
+            <p>Vencimento: Dia 15/mês</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <hr>
+            <h4>Fechamento de ciclo</h4>
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail3">Tipo de pagamento</label>
+                <select class="form-control">
+                  <option>Transferência bancária</option>
+                  <option>Depósito</option>
+                  <option>Dinheiro em mãos</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail3">Mês de referência</label>
+                <select class="form-control">
+                  <option>Janeiro</option>
+                  <option>Fevereiro</option>
+                  <option>Março</option>
+                  <option>Abril</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </form>
+            <div class="form-group">
+              <label for="exampleInputFile">Anexar comprovante</label>
+              <input type="file" id="exampleInputFile">
+            </div>
+            </form>
+            <button type="button" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i> Fechar e enviar para relatórios</button>
           </div>
         </div>
       </div>

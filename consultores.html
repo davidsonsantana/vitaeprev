@@ -51,11 +51,26 @@
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Painel</a></li>
-            <li><a href="vendas.html"><i class="fa fa-line-chart" aria-hidden="true"></i> Vendas</a></li>
+            <li><a href="#" id="btn-1" data-toggle="collapse" data-target="#vendas" aria-expanded="false"><i class="fa fa-line-chart" aria-hidden="true"></i> Vendas <i class="fa fa-caret-down pull-right" aria-hidden="true"></i></a>
+              <ul class="nav collapse" id="vendas" role="menu" aria-labelledby="btn-1">
+                <li><a href="vendas.html">» Resumo de Vendas</a></li>
+                <li><a href="vendas-abertas.html">» Vendas em aberto</a></li>
+                <li><a href="vendas-pagas.html">» Vendas faturadas</a></li>
+              </ul>
+            </li>
             <li class="active"><a href="consultores.html"><i class="fa fa-users" aria-hidden="true"></i> Consultores</a></li>
             <li><a href="pagamentos.html"><i class="fa fa-money" aria-hidden="true"></i> Comissões</a></li>
-            <li><a href="clientes.html"><i class="fa fa-user" aria-hidden="true"></i> Clientes</a></li>
+
+            <li><a href="#" id="btn-1" data-toggle="collapse" data-target="#clientes" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> Clientes <i class="fa fa-caret-down pull-right" aria-hidden="true"></i></a>
+              <ul class="nav collapse" id="clientes" role="menu" aria-labelledby="btn-1">
+                <li><a href="clientes.html">» Listagem clientes</a></li>
+                <li><a href="clientes-pendencia.html">» Clientes com pendência</a></li>
+              </ul>
+            </li>
+
             <li><a href="campanhas.html"><i class="fa fa-bullhorn" aria-hidden="true"></i> Campanhas</a></li>
+            <li><a href="metas.html"><i class="fa fa-bullseye" aria-hidden="true"></i> Metas</a></li>
+          <li><a href="fechamento.html"><i class="fa fa-calendar" aria-hidden="true"></i> Fechamento</a></li>
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">

@@ -28,6 +28,16 @@ $(function(){
   });
 
 
+  // Check ao editar situacao do cliente
+  $('form .wrap-situacao select.situacao').bind('change', function (e) { 
+      if( $('.form-group select.situacao').val() == 'atrasado') {
+        $('form .wrap-situacao .data').show();
+      } else{
+        $('form .wrap-situacao .data').hide();
+      }
+              
+    }).trigger('change');
+
 
 
   

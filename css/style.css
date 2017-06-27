@@ -264,6 +264,12 @@ body {
 
 
 
+.jumbotron h2{
+  font-size: 45px;
+  float: none;
+}
+
+
 
 
 /* Relatorio */
@@ -375,6 +381,12 @@ footer{
 }
 
 .main .gerente{
+  display: none;
+}
+
+
+
+.main form .situacao .data{
   display: none;
 }
 

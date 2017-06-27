@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Clientes - Painel VitaePrev</title>
+    <title>Pagamentos - Painel VitaePrev</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -51,11 +51,11 @@
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Painel</a></li>
-            <li class="active"><a href="#" id="btn-1" data-toggle="collapse" data-target="#vendas" aria-expanded="false"><i class="fa fa-line-chart" aria-hidden="true"></i> Vendas <i class="fa fa-caret-down pull-right" aria-hidden="true"></i></a>
-              <ul class="nav collapse in" id="vendas" role="menu" aria-labelledby="btn-1">
+            <li><a href="#" id="btn-1" data-toggle="collapse" data-target="#vendas" aria-expanded="false"><i class="fa fa-line-chart" aria-hidden="true"></i> Vendas <i class="fa fa-caret-down pull-right" aria-hidden="true"></i></a>
+              <ul class="nav collapse" id="vendas" role="menu" aria-labelledby="btn-1">
                 <li><a href="vendas.html">» Resumo de Vendas</a></li>
                 <li><a href="vendas-abertas.html">» Vendas em aberto</a></li>
-<li><a href="vendas-pagas.html">» Vendas faturadas</a></li>
+                <li><a href="vendas-pagas.html">» Vendas faturadas</a></li>
               </ul>
             </li>
             <li><a href="consultores.html"><i class="fa fa-users" aria-hidden="true"></i> Consultores</a></li>
@@ -70,56 +70,72 @@
 
             <li><a href="campanhas.html"><i class="fa fa-bullhorn" aria-hidden="true"></i> Campanhas</a></li>
             <li><a href="metas.html"><i class="fa fa-bullseye" aria-hidden="true"></i> Metas</a></li>
-          <li><a href="fechamento.html"><i class="fa fa-calendar" aria-hidden="true"></i> Fechamento</a></li>
+            <li><a href="fechamento.html"><i class="fa fa-calendar" aria-hidden="true"></i> Fechamento</a></li>
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
           <div class="title">
-            <h2><i class="fa fa-line-chart" aria-hidden="true"></i> Detalhes da Venda</h2>
+            <h2><i class="fa fa-calendar" aria-hidden="true"></i> Fechamento</h2>
           </div>
-
-          <div class="row">
-            <div class="col-md-8">
-              <h3>Seguro Auto</h3>
-
-              <h4>Inforamações do cliente</h4>
-              <p>Nome: Fulano da Silva</p>
-              <p>Telefone: (81) 9 9999.8888</p>
-              <p>Email: email@email.com.br</p>
-              <p>Endereço: Rua Lorem ipsum dolor sit amet, 123 - Bairro - Cidade/UF</p>
-              <hr>
-
-              <h4>Inforamações da venda</h4>
-              <p>Consultor Responsável: Cicrano dos Santos</p>
-              <p>Valor: R$3.500,00</p>
-              <p>Vencimento: Dia 15/mês</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <hr>
-
-              <div class="status-pagamento">
-                <h4>Status de pagamento</h4>
-                <div class="alert alert-success" role="alert">Pagamento realizado em 15/02/17.</div>
-                <a class="btn btn-danger btn-sm" href="#"><i class="fa fa-times" aria-hidden="true"></i> Reverter confirmação de pagamento do contrato</a>
+          <div class="jumbotron finalizar">
+            <h2>Finalizar período [junho]</h2>
+            <p>Preencha os campos abaixo para fazer a finalização do período.</p>
+            <form class="form">
+              <div class="form-group">
+                <label>Já fez a conferência de todas as vendas em aberto e faturadas?</label>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="pgt1" id="optionsRadios1" value="option1">
+                      Sim
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="pgt1" id="optionsRadios2" value="option2">
+                      Não
+                    </label>
+                  </div>
               </div>
-
-            </div>
-            <div class="col-md-4">
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <img class="center-block thumbnail" src="http://www.placehold.it/180x250">
-                  <h4>Inforamações do consultor que atendeu</h4>
-                  <p>Nome: Fulano da Silva</p>
-                  <p>Telefone: (81) 9 9999.8888</p>
-                  <p>Email: email@email.com.br</p>
-                  <p>Endereço: Rua Lorem ipsum dolor sit amet, 123 - Bairro - Cidade/UF</p>
-                </div>
+              <div class="form-group">
+                <label>Já efetuou a liberação de todas as comissões?</label>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="pgt2" id="optionsRadios1" value="option1">
+                      Sim
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="pgt2" id="optionsRadios2" value="option2">
+                      Não
+                    </label>
+                  </div>
               </div>
-            </div>
+              <div class="form-group">
+                <label>Já fez toda a cobrança necessária para as metas e clientes com pendência?</label>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="pgt3" id="optionsRadios1" value="option1">
+                      Sim
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="pgt3" id="optionsRadios2" value="option2">
+                      Não
+                    </label>
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail3" class="control-label">Relatório gerado por</label>
+                <input type="text" class="form-control" id="inputEmail3" value="Erick Erickson de Santana" disabled>
+              </div>
+              <button type="submit" class="btn btn-success">Finalizar painel e gerar relatorio</button>
+            </form>
           </div>
 
           
-
         </div>
       </div>
     </div>
@@ -131,7 +147,7 @@
     </footer>
 
 
-    <!-- Modal Venda -->
+    <!-- Modal -->
     <div class="modal fade" id="venda" tabindex="-1" role="dialog" aria-labelledby="venda">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -140,17 +156,34 @@
             <h3 class="modal-title" id="myModalLabel">Informações da Venda</h3>
           </div>
           <div class="modal-body">
-            <h4>Seguro Auto</h4>
-            <p><strong>Dados do cliente</strong></p>
-            <p>Nome: Fulano da Silva</p>
-            <p>Telefone: (81) 9 9999.8888</p>
-            <p>Email: email@email.com.br</p>
-            <p>Endereço: Rua Lorem ipsum dolor sit amet, 123 - Bairro - Cidade/UF</p>
-            <hr>
-            <p><strong>Dados da venda</strong></p>
+            <h4>Seguro Viagem</h4>
             <p>Consultor Responsável: Cicrano dos Santos</p>
             <p>Valor: R$3.500,00</p>
+            <p>Vencimento: Dia 15/mês</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+            <button type="button" class="btn btn-success"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Sinalizar pagamento ao consultor ou gerente</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="venda-2" tabindex="-1" role="dialog" aria-labelledby="venda2">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title" id="myModalLabel">Informações da Venda</h3>
+          </div>
+          <div class="modal-body">
+            <h4>Seguro Viagem</h4>
+            <p>Consultor Responsável: Cicrano dos Santos</p>
+            <p>Valor: R$3.500,00</p>
+            <p>Vencimento: Dia 15/mês</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button type="button" class="btn btn-danger"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> Remover sinalização de pagamento ao consultor</button>
           </div>
         </div>
       </div>
